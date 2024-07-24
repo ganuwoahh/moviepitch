@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie Pitch</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <img src="./images/logo.png" alt="Movie Pitch" width="37">
+            <a href="/"><span>Movie</span>Pitch</a>
+        </header>
+        <main>
+            <!-- The Setup-->
+            <section id="setup-container">
+                <div class="setup-container-inner">
+                    <img src="./images/Person2.png" width="300">
+                    <div class="speech-bubble-ai" id="speech-bubble-ai">
+                        <p id="movie-boss-text">
+                            Give me a sentence and I will transform it into a sandwich.
+                        </p>
+                    </div>
+                </div>
+                <div class="setup-inner setup-input-container" id="setup-input-container">
+                    <textarea id="setup-textarea" placeholder="An evil genius wants to take over the world using a sandwich."></textarea>
+                    <button class="send-btn" id="send-btn" aria-label="Send">
+                        <img src="./images/wand.png" alt="send" width="100">
+                    </button>
+                </div>
+            </section>
+            <!-- The Output-->
+            <section class="output-container" id="output-container">
+                <div id="output-img-container" class="output-img-container"></div>
+                <h1 id="output-title"></h1>
+                <h2 id="output-stars"></h2>
+                <p id="output-text"></p>
+            </section>
+        </main>
+        <footer>
+            &copy; 2023 MoviePitch All rights reserved
+        </footer>
+        <script src="index1.js"></script>
+    </body>
+</html>

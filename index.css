@@ -1,0 +1,114 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    left: 20px;
+}
+
+header a {
+    color: navy;
+    font-family: 'Lobster', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+header span {
+    position: relative;
+    color: blue;
+}
+
+main {
+    padding: 20px;
+}
+
+#setup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.setup-container-inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.speech-bubble-ai {
+    position: relative;
+    display: inline-block;
+    background: #dcdcdc; /* Background color of the bubble */
+    border: 1px solid #ccc; /* Border around the bubble */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the bubble */
+    margin: 10px; /* Margin around the bubble */
+    max-width: 300px; /* Maximum width of the bubble */
+    font-size: 16px; /* Font size */
+    color: #333; /* Text color */
+}
+
+/* Arrow pointing to the left */
+.speech-bubble-ai::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px; /* Adjust the position of the arrow as needed */
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-color: #8a8181; /* Same as the bubble background color */
+    border-left-width: 0;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    margin-top: -10px; /* Adjust based on the height of the arrow */
+}
+
+#setup-textarea {
+    width: 300px;
+    height: 100px;
+    border: 2px solid navy;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.send-btn {
+    background-color: darkorange;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.send-btn img {
+    width: 50px;
+}
+
+.output-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer {
+    background-color: darkorange;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
